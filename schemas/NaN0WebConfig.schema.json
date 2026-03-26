@@ -1,0 +1,41 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "NaN0WebConfig",
+	"type": "object",
+	"properties": {
+		"name": {
+			"type": "string",
+			"description": "Project name",
+			"default": ""
+		},
+		"dsn": {
+			"type": "string",
+			"description": "Data Source Name (folder or connection string)",
+			"default": "data/"
+		},
+		"locale": {
+			"type": "string",
+			"description": "Default locale",
+			"default": "en"
+		},
+		"port": {
+			"type": "number",
+			"description": "Server port",
+			"default": 3000
+		},
+		"theme": {
+			"type": "string",
+			"description": "UI theme (light | dark | auto)",
+			"default": "auto"
+		},
+		"log": {
+			"$ref": "LogConfig.schema.json",
+			"description": "Configuration for access and error logs",
+			"default": {}
+		}
+	},
+	"additionalProperties": true,
+	"required": [
+		"name"
+	]
+}

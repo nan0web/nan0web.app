@@ -1,0 +1,24 @@
+title: Nan0web navigation
+href: /
+children:
+  - href: /
+    title: Home
+    icon: home
+  - href: /catalog
+    title: Catalog
+    children:
+      - href: /catalog/apps
+        title: NaN•Web Applications
+        children:
+          - href: /catalog/apps/auth.app
+            title: Auth
+          - href: /catalog/apps/share.app
+            title: Share
+          - href: /catalog/apps/subscribe.app
+            title: Subscribe
+      - href: /catalog/packages
+        title: NaN•Web Packages
+        icon: list
+  - href: /contact
+    title: Contact
+    icon: mail

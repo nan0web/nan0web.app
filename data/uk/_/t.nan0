@@ -1,0 +1,17 @@
+App.Title: NaN0Web Раннер
+App.Description: Універсальний раннер на базі даних для фреймворку 0HCnAI.
+App.Welcome: Ласкаво просимо у світ суверенних даних.
+App.Menu.Catalog: Каталог
+App.Menu.Contact: Контакти
+App.Menu.Home: Головна
+App.Menu.Docs: Документація
+App.Menu.Architecture: Архітектура
+App.Error.NotFound: Сторінку не знайдено.
+App.Error.InvalidData: Неправильний формат даних.
+
+App.Structure.Title: Структура Раннера
+App.Structure.Description: Один алгоритм — багато інтерфейсів (CLI, Web, Chat).
+App.Runner.Action: Спробувати в CLI
+App.Docs.Title: Документація API
+App.Docs.Subtitle: Вчимося розширювати Раннер через модулі.
+

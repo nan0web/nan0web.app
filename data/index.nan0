@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=schemas/Page.schema.json
+layout: Hero
+title: App.Welcome
+description: App.Description
+$content:
+  - type: Hero
+    title: App.Welcome
+    subtitle: App.Description
+    action:
+      label: App.Menu.Catalog
+      href: /en/catalog

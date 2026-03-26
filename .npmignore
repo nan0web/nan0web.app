@@ -1,0 +1,23 @@
+# Test & Dev
+*.test.js
+*.spec.js
+*.story.js
+test/
+releases/
+snapshots/
+play/
+
+# Docs & Gallery
+docs/
+CLI_GALLERY.md
+migration_seed.md
+
+# Build artifacts
+dist/
+.datasets/
+.vscode/
+
+# Assets (too heavy for npm)
+snapshots/web/
+logs/
+*.log

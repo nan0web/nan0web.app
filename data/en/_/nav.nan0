@@ -1,0 +1,15 @@
+- href: /en
+  title: App.Menu.Home
+  icon: home
+- href: /en/docs
+  title: App.Menu.Docs
+  icon: book
+- href: /en/docs/architecture
+  title: App.Menu.Architecture
+  icon: layer
+- href: /en/catalog
+  title: App.Menu.Catalog
+  icon: list
+- href: /en/contact
+  title: App.Menu.Contact
+  icon: mail

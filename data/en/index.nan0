@@ -1,0 +1,32 @@
+title: 'NaN•Web Runner'
+description: 'Universal Sovereign App Runner'
+content:
+  - ui-header:
+      brand: 'NaN•Web App'
+      github: 'https://github.com/nan0web/core'
+      platformUrl: 'https://nan0web.yaro.page'
+      platformLabel: 'NaN•Web'
+  - ui-hero:
+      badge: 'v1.0.0'
+      title: 'Sovereign OLMUI Runner'
+      subtitle: 'One algorithm — many interfaces. Seamlessly run your applications in CLI, Web (Lit/React), or Chat from the exact same data model.'
+      install: 'npm run start -- --dsn data/'
+      cta: 'Read Documentation'
+      ctaHref: '/en/docs'
+  - h2: 'Core Modules'
+  - ui-feature-grid:
+      items:
+        - title: 'UI CLI'
+          description: 'High-speed terminal interaction and data pipelines via @nan0web/ui-cli.'
+          icon: '🚀'
+        - title: 'UI Web (Lit & React)'
+          description: 'Modern, reactive web interfaces running entirely in-browser or SSR.'
+          icon: '🌐'
+        - title: 'UI Chat'
+          description: 'Conversational LLM or state-machine-driven interaction via @nan0web/ui-chat.'
+          icon: '💬'
+  - ui-footer:
+      license: 'ISC License'
+      year: '2026'
+      platform: 'NaN•Web Platform'
+      platformUrl: 'https://nan0web.yaro.page'

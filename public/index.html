@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NaN•Web — Sovereign OLMUI Runner</title>
+	<meta name="description" content="One algorithm — many interfaces. Seamlessly run your applications in CLI, Web, or Chat from the exact same data model.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- HEADER                                  -->
+<!-- ═══════════════════════════════════════ -->
+<header class="site-header" id="site-header">
+	<div class="header-inner">
+		<a href="#hero" class="brand">
+			<div class="brand-icon">N</div>
+			<span id="header-title">Nan0web</span>
+		</a>
+		<nav>
+			<ul class="nav-links" id="nav-links">
+				<!-- Populated by JS from nav.nan0 -->
+			</ul>
+		</nav>
+		<div class="lang-switcher" id="lang-switcher">
+			<button class="lang-btn active" data-lang="en" onclick="switchLang('en')">EN</button>
+			<button class="lang-btn" data-lang="uk" onclick="switchLang('uk')">UK</button>
+		</div>
+	</div>
+</header>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- HERO SECTION                            -->
+<!-- ═══════════════════════════════════════ -->
+<section class="hero" id="hero">
+	<div class="hero-content">
+		<div class="hero-badge" id="hero-badge">
+			<span>✦</span> <span id="hero-version">v1.0.0</span>
+		</div>
+		<h1 class="hero-title" id="hero-title">Sovereign OLMUI Runner</h1>
+		<p class="hero-subtitle" id="hero-subtitle">
+			One algorithm — many interfaces. Seamlessly run your applications in CLI, Web (Lit/React), or Chat from the exact same data model.
+		</p>
+		<div class="hero-code">
+			<span class="prompt">$</span>
+			<span id="hero-install">npm run start -- --dsn data/</span>
+		</div>
+		<div class="hero-actions">
+			<a href="#docs" class="btn btn-primary" id="hero-cta">Read Documentation</a>
+			<a href="https://github.com/nan0web/core" class="btn btn-ghost" target="_blank" rel="noopener">
+				⬡ GitHub
+			</a>
+		</div>
+	</div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- FEATURES                                -->
+<!-- ═══════════════════════════════════════ -->
+<section class="section" id="features">
+	<h2 class="section-title fade-in" id="features-title">Core Modules</h2>
+	<p class="section-subtitle fade-in" id="features-subtitle">One Logic — Many UI. Three adapters, one domain model.</p>
+	<div class="features-grid" id="features-grid">
+		<!-- Populated by JS from data -->
+	</div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- CATALOG                                 -->
+<!-- ═══════════════════════════════════════ -->
+<section class="section" id="catalog">
+	<h2 class="section-title fade-in" id="catalog-title">Catalog</h2>
+	<p class="section-subtitle fade-in">Active projects powered by NaN•Web</p>
+	<div class="catalog-grid" id="catalog-grid">
+		<!-- Populated by JS from data -->
+	</div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- DOCS                                    -->
+<!-- ═══════════════════════════════════════ -->
+<section class="section docs-section" id="docs">
+	<div class="docs-content fade-in" id="docs-content">
+		<!-- Populated by JS from Markdown -->
+	</div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- ARCHITECTURE                            -->
+<!-- ═══════════════════════════════════════ -->
+<section class="section" id="architecture">
+	<h2 class="section-title fade-in">Architecture</h2>
+	<p class="section-subtitle fade-in">How the NaN•Web Engine processes your intents</p>
+	<div class="arch-timeline fade-in" id="arch-timeline">
+		<!-- Populated by JS from data -->
+	</div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- CONTACT                                 -->
+<!-- ═══════════════════════════════════════ -->
+<section class="section" id="contact">
+	<h2 class="section-title fade-in" id="contact-title">Contact</h2>
+	<p class="section-subtitle fade-in">Get in touch with the team</p>
+	<form class="contact-form fade-in" id="contact-form" action="/api/contact" method="POST">
+		<div class="form-group">
+			<label for="contact-name">Name</label>
+			<input type="text" id="contact-name" name="name" placeholder="Your name" required>
+		</div>
+		<div class="form-group">
+			<label for="contact-email">Email</label>
+			<input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
+		</div>
+		<div class="form-group">
+			<label for="contact-message">Message</label>
+			<textarea id="contact-message" name="message" placeholder="Tell us about your project…" required></textarea>
+		</div>
+		<button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send Message</button>
+	</form>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- FOOTER                                  -->
+<!-- ═══════════════════════════════════════ -->
+<footer class="site-footer">
+	<div class="footer-inner">
+		<div class="footer-brand">
+			<a href="#hero" class="brand">
+				<div class="brand-icon">N</div>
+				<span>Nan0web</span>
+			</a>
+			<p>Sovereign Web. Your Data. Your UI.</p>
+		</div>
+		<div class="footer-links" id="footer-nav">
+			<!-- Populated by JS -->
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<p id="footer-copyright">© 2026 Nan0web. All rights reserved.</p>
+		<div>
+			<span id="footer-version" style="color: var(--text-muted); font-size: 0.8rem; margin-right: 12px;">v1.0.0</span>
+			<span id="footer-license" style="color: var(--text-muted); font-size: 0.8rem;">ISC</span>
+		</div>
+		<div class="footer-social">
+			<a href="https://github.com/nan0web" target="_blank" rel="noopener" title="GitHub">⬡</a>
+			<a href="https://t.me/nan0web" target="_blank" rel="noopener" title="Telegram">✈</a>
+		</div>
+	</div>
+</footer>
+
+<script>
+/**
+ * NaN•Web Presentation App — Data-Driven Renderer
+ * 
+ * This script reads structured data (hardcoded from data/ directory)
+ * and renders it into the HTML skeleton above.
+ */
+
+// ═══════════════════════════════════════════
+// DATA LAYER (from data/ directory)
+// ═══════════════════════════════════════════
+
+const DATA = {
+	en: {
+		hero: {
+			badge: 'v1.0.0',
+			title: 'Sovereign OLMUI Runner',
+			subtitle: 'One algorithm — many interfaces. Seamlessly run your applications in CLI, Web (Lit/React), or Chat from the exact same data model.',
+			install: 'npm run start -- --dsn data/',
+			cta: 'Read Documentation',
+			ctaHref: '#docs'
+		},
+		features: [
+			{ icon: '🚀', title: 'UI CLI', description: 'High-speed terminal interaction and data pipelines via @nan0web/ui-cli.' },
+			{ icon: '🌐', title: 'UI Web (Lit & React)', description: 'Modern, reactive web interfaces running entirely in-browser or SSR.' },
+			{ icon: '💬', title: 'UI Chat', description: 'Conversational LLM or state-machine-driven interaction via @nan0web/ui-chat.' }
+		],
+		catalog: [
+			{ title: 'Industrial Bank', description: 'The banking migration project.', status: 'active' },
+			{ title: 'EA Ukraine', description: 'News intelligence platform.', status: 'active' }
+		],
+		nav: [
+			{ href: '#hero', title: 'Home', icon: '⌂' },
+			{ href: '#docs', title: 'Documentation', icon: '📖' },
+			{ href: '#architecture', title: 'Architecture', icon: '◈' },
+			{ href: '#catalog', title: 'Catalog', icon: '☰' },
+			{ href: '#contact', title: 'Contact', icon: '✉' }
+		],
+		docs: `<h1>Documentation</h1>
+<p>Welcome to the NaN0Web Runner documentation. This engine is built on the <strong>OLMUI Triad</strong> principle:</p>
+<ol>
+<li><strong>One Logic</strong>: The core state machine and business rules are shared.</li>
+<li><strong>Many UI</strong>: Different adapters (CLI, Web, Chat) render the same data.</li>
+</ol>
+<h2>Getting Started</h2>
+<p>To run your own app through the runner:</p>
+<pre><code>nan0web run --dsn data/</code></pre>
+<h2>Data Structure</h2>
+<p>Each app consists of:</p>
+<ul>
+<li><code>_ / t.nan0</code> — Translations.</li>
+<li><code>_ / nav.nan0</code> — Navigation tree.</li>
+<li><code>index.nan0</code> — Main entry point.</li>
+</ul>`,
+		architecture: [
+			{ step: 'Runner.run()', description: 'Discovers apps, loads configuration, and initializes the DBFS state.' },
+			{ step: 'IntentResolver', description: 'Delegates user actions to the appropriate sub-app or internal handler.' },
+			{ step: 'UI Adapters', description: 'Renders the view — CLI draws terminal forms, Web renders components, Chat sends messages.' }
+		],
+		footer: {
+			copyright: '© 2026 Nan0web. All rights reserved.',
+			version: 'v1.0.0',
+			license: 'ISC'
+		},
+		titles: {
+			features: 'Core Modules',
+			catalog: 'Catalog',
+			contact: 'Contact'
+		}
+	},
+	uk: {
+		hero: {
+			badge: 'v1.0.0',
+			title: 'Суверенний OLMUI Раннер',
+			subtitle: 'Один алгоритм — багато інтерфейсів. Запускайте ваші додатки в CLI, Web та Чатах.',
+			install: 'npm run start -- --dsn data/',
+			cta: 'Читати Документацію',
+			ctaHref: '#docs'
+		},
+		features: [
+			{ icon: '🚀', title: 'UI CLI', description: 'Термінальна взаємодія через @nan0web/ui-cli.' },
+			{ icon: '🌐', title: 'UI Web (Lit & React)', description: 'Веб-інтерфейси (SSR та CSR) для найкращого UX.' },
+			{ icon: '💬', title: 'UI Chat', description: 'Діалогові інтерфейси (LLM та state-machine).' }
+		],
+		catalog: [
+			{ title: 'Industrial Bank', description: 'Банківський міграційний проєкт.', status: 'active' },
+			{ title: 'EA Ukraine', description: 'Платформа новинної аналітики.', status: 'active' }
+		],
+		nav: [
+			{ href: '#hero', title: 'Головна', icon: '⌂' },
+			{ href: '#docs', title: 'Документація', icon: '📖' },
+			{ href: '#architecture', title: 'Архітектура', icon: '◈' },
+			{ href: '#catalog', title: 'Каталог', icon: '☰' },
+			{ href: '#contact', title: 'Контакт', icon: '✉' }
+		],
+		docs: `<h1>Документація</h1>
+<p>Ласкаво просимо до документації NaN0Web Runner. Цей рушій побудований за принципом <strong>OLMUI Тріади</strong>:</p>
+<ol>
+<li><strong>Одна Логіка</strong>: Стейт-машина та бізнес-правила спільні для всіх.</li>
+<li><strong>Багато UI</strong>: Різні адаптери (CLI, Web, Chat) рендерять ті самі дані.</li>
+</ol>
+<h2>Початок роботи</h2>
+<p>Щоб запустити свій додаток через раннер:</p>
+<pre><code>nan0web run --dsn data/</code></pre>
+<h2>Структура даних</h2>
+<p>Кожен додаток складається з:</p>
+<ul>
+<li><code>_ / t.nan0</code> — Переклади.</li>
+<li><code>_ / nav.nan0</code> — Дерево навігації.</li>
+<li><code>index.nan0</code> — Головна точка входу.</li>
+</ul>`,
+		architecture: [
+			{ step: 'Runner.run()', description: 'Виявляє додатки, завантажує конфігурацію та ініціалізує стан DBFS.' },
+			{ step: 'IntentResolver', description: 'Делегує дії користувача у відповідний під-додаток або внутрішній обробник.' },
+			{ step: 'UI Adapters', description: 'Рендерить вигляд — CLI малює термінальні форми, Web рендерить компоненти, Chat надсилає повідомлення.' }
+		],
+		footer: {
+			copyright: '© 2026 Nan0web. Усі права захищено.',
+			version: 'v1.0.0',
+			license: 'ISC'
+		},
+		titles: {
+			features: 'Основні модулі',
+			catalog: 'Каталог',
+			contact: 'Контакт'
+		}
+	}
+}
+
+// ═══════════════════════════════════════════
+// RENDER ENGINE
+// ═══════════════════════════════════════════
+
+let currentLang = 'en'
+
+function render(lang) {
+	currentLang = lang
+	const d = DATA[lang]
+
+	// Hero
+	document.getElementById('hero-version').textContent = d.hero.badge
+	document.getElementById('hero-title').textContent = d.hero.title
+	document.getElementById('hero-subtitle').textContent = d.hero.subtitle
+	document.getElementById('hero-install').textContent = d.hero.install
+	document.getElementById('hero-cta').textContent = d.hero.cta
+	document.getElementById('hero-cta').href = d.hero.ctaHref
+
+	// Navigation
+	const navEl = document.getElementById('nav-links')
+	navEl.innerHTML = d.nav.map(n =>
+		`<li><a href="${n.href}">${n.title}</a></li>`
+	).join('')
+
+	// Features
+	document.getElementById('features-title').textContent = d.titles.features
+	const grid = document.getElementById('features-grid')
+	grid.innerHTML = d.features.map(f => `
+		<div class="feature-card fade-in">
+			<span class="feature-icon">${f.icon}</span>
+			<h3>${f.title}</h3>
+			<p>${f.description}</p>
+		</div>
+	`).join('')
+
+	// Catalog
+	document.getElementById('catalog-title').textContent = d.titles.catalog
+	const catGrid = document.getElementById('catalog-grid')
+	catGrid.innerHTML = d.catalog.map(c => `
+		<div class="catalog-card fade-in">
+			<div class="status">${c.status}</div>
+			<h3>${c.title}</h3>
+			<p>${c.description}</p>
+		</div>
+	`).join('')
+
+	// Docs
+	document.getElementById('docs-content').innerHTML = d.docs
+
+	// Architecture
+	const archEl = document.getElementById('arch-timeline')
+	archEl.innerHTML = d.architecture.map(a => `
+		<div class="arch-step">
+			<h3>${a.step}</h3>
+			<p>${a.description}</p>
+		</div>
+	`).join('')
+
+	// Contact
+	document.getElementById('contact-title').textContent = d.titles.contact
+
+	// Footer
+	document.getElementById('footer-copyright').textContent = d.footer.copyright
+	document.getElementById('footer-version').textContent = d.footer.version
+	document.getElementById('footer-license').textContent = d.footer.license
+
+	// Re-observe animations
+	observeFadeIns()
+}
+
+function switchLang(lang) {
+	document.querySelectorAll('.lang-btn').forEach(btn => {
+		btn.classList.toggle('active', btn.dataset.lang === lang)
+	})
+	document.documentElement.lang = lang
+	render(lang)
+}
+
+// ═══════════════════════════════════════════
+// SCROLL ANIMATIONS 
+// ═══════════════════════════════════════════
+
+function observeFadeIns() {
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('visible')
+			}
+		})
+	}, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' })
+
+	document.querySelectorAll('.fade-in:not(.visible)').forEach(el => {
+		// Immediately show elements that are already in viewport
+		const rect = el.getBoundingClientRect()
+		if (rect.top < window.innerHeight) {
+			el.classList.add('visible')
+		} else {
+			observer.observe(el)
+		}
+	})
+}
+
+// ═══════════════════════════════════════════
+// HEADER SCROLL EFFECT
+// ═══════════════════════════════════════════
+
+let lastScroll = 0
+window.addEventListener('scroll', () => {
+	const header = document.getElementById('site-header')
+	const scrollY = window.scrollY
+	if (scrollY > 100) {
+		header.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.3)'
+	} else {
+		header.style.boxShadow = 'none'
+	}
+	lastScroll = scrollY
+})
+
+// ═══════════════════════════════════════════
+// CONTACT FORM HANDLER
+// ═══════════════════════════════════════════
+
+document.getElementById('contact-form').addEventListener('submit', (e) => {
+	e.preventDefault()
+	const btn = e.target.querySelector('button[type="submit"]')
+	btn.textContent = '✓ Sent!'
+	btn.style.background = 'linear-gradient(135deg, #22c55e, #06b6d4)'
+	setTimeout(() => {
+		btn.textContent = 'Send Message'
+		btn.style.background = ''
+		e.target.reset()
+	}, 2000)
+})
+
+// ═══════════════════════════════════════════
+// BOOT
+// ═══════════════════════════════════════════
+
+render('en')
+</script>
+
+</body>
+</html>
