@@ -1,0 +1,47 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "Page",
+	"type": "object",
+	"properties": {
+		"slug": {
+			"type": "string",
+			"description": "URL path segment",
+			"default": ""
+		},
+		"title": {
+			"type": "string",
+			"description": "Display title (i18n key or raw string)",
+			"default": ""
+		},
+		"source": {
+			"type": "string",
+			"description": "Data binding key in Global State (e.g. \"court.cases\")",
+			"default": ""
+		},
+		"layout": {
+			"type": "string",
+			"enum": [
+				"page",
+				"list",
+				"form",
+				"feed"
+			],
+			"description": "Rendering strategy",
+			"default": "page"
+		},
+		"icon": {
+			"type": "string",
+			"description": "Optional icon identifier",
+			"default": ""
+		},
+		"hidden": {
+			"type": "boolean",
+			"description": "Excluded from navigation",
+			"default": false
+		}
+	},
+	"additionalProperties": true,
+	"required": [
+		"slug"
+	]
+}

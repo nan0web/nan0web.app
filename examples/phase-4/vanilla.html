@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NaN0Web Vanilla Example</title>
+	<style>
+		body { font-family: sans-serif; }
+		#live-status { font-weight: bold; color: green; }
+	</style>
+</head>
+<body>
+	<h1>NaN0Web Vanilla Client</h1>
+	<p>Status: <span id="live-status">Waiting...</span></p>
+	<div id="app-content"></div>
+
+	<script type="module">
+		const statusEl = document.getElementById('live-status');
+		const contentEl = document.getElementById('app-content');
+
+		// Subscribe to global bridge event
+		window.addEventListener('nan0-state-change', (e) => {
+			const state = e.detail;
+			statusEl.innerText = 'Connected & Synchronized';
+			
+			// Simple DOM rendering
+			contentEl.innerHTML = `
+				<h3>${state.title || 'Untitled'}</h3>
+				<p>Active Views: ${state.stats?.views || 0}</p>
+				<pre>${JSON.stringify(state, null, 2)}</pre>
+			`;
+		});
+	</script>
+</body>
+</html>

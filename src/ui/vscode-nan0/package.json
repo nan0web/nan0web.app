@@ -1,0 +1,58 @@
+{
+	"name": "vscode-nan0",
+	"displayName": "nan•web extension",
+	"description": "Unified VS Code interface for nan•web platform",
+	"version": "1.0.0",
+	"publisher": "nan0web",
+	"engines": {
+		"vscode": "^1.90.0"
+	},
+	"categories": [
+		"Programming Languages",
+		"Formatters"
+	],
+	"main": "./src/extension.js",
+	"contributes": {
+		"languages": [
+			{
+				"id": "nan0",
+				"aliases": [
+					"NaN0",
+					"nan0"
+				],
+				"extensions": [
+					".nan0"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "nan0",
+				"scopeName": "source.nan0",
+				"path": "./syntaxes/nan0.tmLanguage.json"
+			}
+		],
+		"customEditors": [
+			{
+				"viewType": "nan0web.editor",
+				"displayName": "NaN0 Visual Editor",
+				"selector": [
+					{
+						"filenamePattern": "*.nan0"
+					},
+					{
+						"filenamePattern": "*.yaml"
+					},
+					{
+						"filenamePattern": "*.json"
+					}
+				],
+				"priority": "option"
+			}
+		]
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.90.0"
+	}
+}

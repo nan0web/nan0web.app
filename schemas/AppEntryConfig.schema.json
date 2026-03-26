@@ -1,0 +1,32 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "AppEntryConfig",
+	"type": "object",
+	"properties": {
+		"name": {
+			"type": "string",
+			"description": "Unique app identifier (maps to App.{Name}.* in data)",
+			"default": ""
+		},
+		"src": {
+			"type": "string",
+			"description": "Installation source — npm package or local path",
+			"default": ""
+		},
+		"dsn": {
+			"type": "string",
+			"description": "Data source (inherits parent if empty)",
+			"default": ""
+		},
+		"locale": {
+			"type": "string",
+			"description": "Locale override (inherits parent if empty)",
+			"default": ""
+		}
+	},
+	"additionalProperties": true,
+	"required": [
+		"name",
+		"src"
+	]
+}

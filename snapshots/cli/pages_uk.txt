@@ -1,0 +1,58 @@
+NaN0Web CLI — UK Pages
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Routes: 7
+
+┌─ 'NaN•Web Runner' (/en)
+│  Layout: page
+│  ── 'Core Modules' ──────────────────────────────────────────
+└─ Blocks: 5
+
+┌─ App.Docs.Title (/en/docs)
+│  Layout: Doc
+│    Documentation
+│  Welcome to the NaN0Web Runner documentation. This engine is built on the **OLMUI Triad** principle:
+│  Getting Started
+│  To run your own app through the runner:
+│  nan0web run --dsn data/
+│  Data Structure
+│  Each app consists of:
+└─ Blocks: 1
+
+┌─ App.Menu.Architecture (/en/docs/architecture)
+│  Layout: Doc
+│    Architecture
+│  The **NaN0Web Engine** is a sovereign runtime that turns data structures into interactive interfaces.
+│  Core Concepts
+│  Sequence
+└─ Blocks: 1
+
+┌─ 'NaN•Web Runner' (/uk)
+│  Layout: page
+│  ── 'Основні модулі' ────────────────────────────────────────
+└─ Blocks: 5
+
+┌─ App.Docs.Title (/uk/docs)
+│  Layout: Doc
+│    Документація
+│  Ласкаво просимо до документації NaN0Web Раннера. Цей рушій побудований на принципі **OLMUI Triad**:
+│  Початок роботи
+│  Щоб запустити свій додаток через раннер:
+│  nan0web run --dsn data/
+│  Структура даних
+│  Кожен додаток складається з:
+└─ Blocks: 1
+
+┌─ App.Menu.Architecture (/uk/docs/architecture)
+│  Layout: Doc
+│    Архітектура
+│  **NaN0Web Engine** — це суверенне середовище виконання, яке перетворює структури даних на інтерактивні інтерфейси.
+│  Основні концепції
+│  Послідовність
+└─ Blocks: 1
+
+┌─ App.Welcome (/)
+│  Layout: Hero
+│    App.Description
+│    App.Welcome
+│    Hero
+└─ Blocks: 1

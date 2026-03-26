@@ -1,0 +1,39 @@
+$header:
+  ui:
+    cli:
+      logo: false
+      theme: false
+
+$footer:
+  ui:
+    cli:
+      copyright: true
+      version: true
+      license: true
+      nav: false
+      clock: true
+
+header:
+  # nav is default = doc.nav, but possible to override here
+  # langs is default = doc.langs, but possible to override here
+  title: Nan0web
+
+footer:
+  # nav is default = doc.nav, but possible to override here
+  # langs is default = doc.langs, but possible to override here
+  copyright: © 2026 Nan0web. All rights reserved.
+  version: 1.0.0
+  license: ISC
+  nav:
+    - href: /contact
+      title: Contact
+      icon: mail
+    - href: '#'
+      title: Social
+      children:
+        - href: https://github.com/nan0web
+          title: GitHub
+          icon: github
+        - href: https://t.me/nan0web
+          title: Telegram
+          icon: telegram

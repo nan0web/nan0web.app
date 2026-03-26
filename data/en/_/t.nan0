@@ -1,0 +1,16 @@
+App.Title: NaN0Web Runner
+App.Description: Universal data-driven runner for the 0HCnAI framework.
+App.Welcome: Welcome to the world of sovereign data.
+App.Menu.Catalog: Catalog
+App.Menu.Contact: Contact
+App.Menu.Home: Home
+App.Menu.Docs: Documentation
+App.Menu.Architecture: Architecture
+App.Error.NotFound: Page not found.
+App.Error.InvalidData: Invalid data format.
+
+App.Structure.Title: Runner Structure
+App.Structure.Description: One logic — many interfaces (CLI, Web, Chat).
+App.Runner.Action: Try in CLI
+App.Docs.Title: API Documentation
+App.Docs.Subtitle: Learning to extend the Runner via modules.

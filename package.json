@@ -1,0 +1,43 @@
+{
+	"name": "@nan0web/nan0web.app",
+	"version": "0.1.0",
+	"description": "Sovereign OLMUI Engine — High-performance, data-driven runner for the NaN•Web ecosystem with architectural boot security.",
+	"author": "ЯRаСлав <support@yaro.page>",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nan0web/nan0web.app.git"
+	},
+	"private": false,
+	"type": "module",
+	"bin": {
+		"nan0web": "./bin/nan0web"
+	},
+	"scripts": {
+		"start": "node bin/nan0web",
+		"dev": "vite",
+		"build": "vite build",
+		"test": "node --test \"src/**/*.test.js\"",
+		"test:docs": "node --test \"src/README.md.js\"",
+		"test:stories": "node --test \"test/stories/*.story.js\"",
+		"test:play": "UI_SNAPSHOT=1 node --test --test-concurrency=1 --test-timeout=15000 \"test/play/**/*.test.js\"",
+		"test:gallery": "npx nan0gallery --dir=snapshots/cli --out=CLI_GALLERY.md",
+		"test:all": "node --test \"src/**/*.test.js\" \"test/stories/*.story.js\" && npm run test:play",
+		"release:spec": "node --test \"releases/**/*.spec.js\"",
+		"release:verify": "npm run test:all && npm run release:spec"
+	},
+	"dependencies": {
+		"@nan0web/core": "^1.1.2",
+		"@nan0web/db-browser": "^1.1.1",
+		"@nan0web/db-fs": "^1.2.1",
+		"@nan0web/http-node": "^1.0.2",
+		"@nan0web/i18n": "^1.4.0",
+		"@nan0web/markdown": "^1.0.2",
+		"@nan0web/types": "^1.7.0",
+		"@nan0web/ui": "^1.10.0",
+		"@nan0web/ui-cli": "^2.10.0"
+	},
+	"devDependencies": {
+		"vite": "^7.3.1"
+	}
+}

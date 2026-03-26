@@ -1,0 +1,36 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "Navigation",
+	"type": "object",
+	"properties": {
+		"title": {
+			"type": "string",
+			"description": "Navigation label"
+		},
+		"icon": {
+			"type": "string",
+			"description": "Icon name (from @nan0web/icons)"
+		},
+		"image": {
+			"type": "string",
+			"description": "Optional image or logo URL"
+		},
+		"href": {
+			"type": "string",
+			"description": "Target route or external URL"
+		},
+		"children": {
+			"type": "array",
+			"items": {
+				"$ref": "Navigation.schema.json"
+			},
+			"description": "Nested navigation sub-items",
+			"default": []
+		}
+	},
+	"additionalProperties": true,
+	"required": [
+		"title",
+		"href"
+	]
+}

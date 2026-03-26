@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../../schemas/Page.schema.json
+layout: List
+title: App.Menu.Catalog
+$content:
+  projects:
+    - title: Industrial Bank
+      description: The banking migration project.
+      status: active
+    - title: EA Ukraine
+      description: News intelligence platform.
+      status: active

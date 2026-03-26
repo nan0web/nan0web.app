@@ -1,0 +1,30 @@
+title: 'NaN•Web Runner'
+description: 'Універсальний Суверенний Раннер'
+content:
+  - UI.Header:
+      brand: 'NaN•Web <https://nan0web.yaro.page>'
+      logo: 'logo-thin.svg'
+      socials:
+        - 'GitHub <https://github.com/nan0web/core>'
+  - UI.Hero:
+      badge: 'v1.0.0'
+      title: 'Суверенний OLMUI Раннер'
+      subtitle: 'Один алгоритм — багато інтерфейсів. Запускайте ваші додатки в CLI, Web та Чатах.'
+      code: 'npm run start -- --dsn data/'
+      cta: 'Читати Документацію </uk/docs>'
+  - h2: 'Основні модулі'
+  - UI.Feature.Grid:
+      items:
+        - title: 'UI CLI'
+          description: 'Термінальна взаємодія через @nan0web/ui-cli.'
+          icon: '🚀'
+        - title: 'UI Web (Lit & React)'
+          description: 'Веб-інтерфейси (SSR та CSR) для найкращого UX.'
+          icon: '🌐'
+        - title: 'UI Chat'
+          description: 'Діалогові інтерфейси (LLM та state-machine).'
+          icon: '💬'
+  - UI.Footer:
+      license: 'ISC License'
+      links:
+        - 'NaN•Web Platform <https://nan0web.yaro.page>'
